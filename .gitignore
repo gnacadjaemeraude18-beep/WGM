@@ -1,0 +1,73 @@
+# Base Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/**
+!build/windows/installer/
+!build/windows/installer/*.exe
+!build/app/outputs/flutter-apk/*.apk
+
+# Android
+android/**/generated/
+android/app/debug
+android/app/profile
+android/app/release
+android/local.properties
+android/key.properties
+*.keystore
+*.jks
+
+# iOS
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Runner/GeneratedPluginRegistrant.h
+ios/Runner/GeneratedPluginRegistrant.m
+**/Pods/
+
+# Windows
+windows/flutter/generated_plugin_registrant.cc
+windows/flutter/generated_plugin_registrant.h
+windows/flutter/generated_plugins.cmake
+windows/flutter/ephemeral/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# WGM Specific - Exclude large/temporary folders
+maquette_de_base/
+node_modules/
+
+# Binaries
+*.exe
+!/build/windows/installer/*.exe
+!/build/app/outputs/flutter-apk/*.apk
+*.msi
+*.zip
+*.rar
+
+# Logs
+*.log
+
+# Outils de test et sauvegardes locales
+*.bak
+fake_esp32_state.json
+__pycache__/
+_export_github.tar.gz
+
+# Binaires (à publier dans GitHub Releases plutôt que dans le dépôt)
+*.exe
+node_modules/
+dist/
+
+# Secrets (jamais publiés : voir les fichiers .example)
+lib/secrets.dart
+hardware/secrets.h
